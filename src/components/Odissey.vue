@@ -1,3 +1,3 @@
 <template>
-    This is my Odissey template
+    This is my Odissey component
 </template>
