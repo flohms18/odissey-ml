@@ -1,10 +1,11 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue';
+import Odissey from './components/Odissey.vue';
 
 </script>
 
 <template>
-  <HelloWorld></HelloWorld>
+  <Odissey></Odissey>
 </template>
 
 <style scoped></style>
