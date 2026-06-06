@@ -2,12 +2,19 @@
 import HelloWorld from './components/HelloWorld.vue';
 import Odissey from './components/Odissey.vue';
 
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 </script>
 
 <template>
   <Odissey></Odissey>
 
-  <h1 class="Main_Title">THIS IS MY ODISSEY FONT</h1>
+  <section>
+    <div class="d-flex p-2 bg-primary">
+      I'm a flexbox container
+    </div>
+  </section>
 </template>
 
 <style scoped>
