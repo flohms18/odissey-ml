@@ -11,4 +11,5 @@
 
 body {
   background-color: var(--dark-color);
+  letter-spacing: 4px;
 }
