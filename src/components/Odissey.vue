@@ -1,3 +1,9 @@
+<script setup>
+import Header from './Header.vue';
+
+
+</script>
+
 <template>
-    This is my Odissey component
+    <Header></Header>
 </template>
