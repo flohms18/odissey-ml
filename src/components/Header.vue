@@ -1,4 +1,5 @@
 <template>
+    <header>
   <nav class="navbar navbar-expand-lg navbar-dark nav-themed">
     <button
       class="navbar-toggler"
@@ -22,6 +23,7 @@
       </ul>
     </div>
   </nav>
+  </header>
 </template>
 
 <style scoped>
