@@ -16,20 +16,16 @@ onMounted(() => {
     <div class="d-flex flex-column min-vh-100">
         <Header></Header>
         <div class="d-flex flex-column justify-content-center align-items-center flex-grow-1 text-center">
-            <h1 id="main-title" ref="titleRef">The Odissey of Machine Learning</h1>
-            <h4 id="main-subtitle" class="mt-2" ref="subtitleRef">Coming Soon</h4>
+            <div class="container px-4 px-md-5">
+                <h1 id="main-title" ref="titleRef">The Odissey of Machine Learning</h1>
+                <h4 id="main-subtitle" class="mt-2 mt-md-3" ref="subtitleRef">Coming Soon</h4>
+            </div>
         </div>
         <Footer></Footer>
     </div>
 </template>
 
 <style scoped>
-
-:root {
-  --dark-color : #0D0D0D;
-  --blue-color: #2F5E8D;
-  --red-color : #ce2127;
-}
 
 @keyframes fadeSlideUp {
   from {
@@ -45,14 +41,34 @@ onMounted(() => {
 #main-title {
     color: var(--blue-color);
     font-family: OdisseyFont, sans-serif;
+    font-size: 1.8rem;
     animation: fadeSlideUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 #main-subtitle {
     color: var(--red-color);
     font-family: OdisseyFont, sans-serif;
+    font-size: 1rem;
     opacity: 0;
     animation: fadeSlideUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.45s forwards;
+}
+
+/* Bootstrap sm breakpoint: 576px */
+@media (min-width: 576px) {
+    #main-title { font-size: 2.5rem; }
+    #main-subtitle { font-size: 1.1rem; }
+}
+
+/* Bootstrap md breakpoint: 768px */
+@media (min-width: 768px) {
+    #main-title { font-size: 3.5rem; }
+    #main-subtitle { font-size: 1.3rem; }
+}
+
+/* Bootstrap lg breakpoint: 992px */
+@media (min-width: 992px) {
+    #main-title { font-size: 4.5rem; }
+    #main-subtitle { font-size: 1.5rem; }
 }
 
 </style>
