@@ -11,8 +11,10 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
   <Odissey></Odissey>
 
   <section>
-    <div class="d-flex p-2 bg-primary">
-      I'm a flexbox container
+    <div class="d-flex bg-danger flex-row">
+      <div class="p-2">Flex item 1</div>
+      <div class="p-2">Flex item 2</div>
+      <div class="p-2">Flex item 3</div>
     </div>
   </section>
 </template>
