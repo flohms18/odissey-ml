@@ -4,7 +4,7 @@ import Footer from './Footer.vue';
 import Header from './Header.vue';
 
 const titleRef = ref(null);
-const introSlogan = ref("DEFY THE GODS BY TRAINING THE MODEL")
+const introSlogan = ref("DEFY THE GODS, TRAIN THE MACHINE")
 onMounted(() => {
   titleRef.value.textContent = titleRef.value.textContent.toUpperCase();
 });
@@ -61,7 +61,7 @@ onMounted(() => {
     color: var(--red-color);
     letter-spacing: 4px;
     max-width: 900px;
-    margin: 3rem auto 0;
+    margin: 0.5rem auto 0;
     font-family: OdisseyFont, sans-serif;
     opacity: 0;
     animation: fadeSlideUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards;
