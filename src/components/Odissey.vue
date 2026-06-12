@@ -5,6 +5,10 @@ import Header from './Header.vue';
 
 const titleRef = ref(null);
 const introSlogan = ref("DEFY THE GODS, TRAIN THE MACHINE")
+const MLRef = ref("Machine Learning is a field of study in artificial intelligence that focuses on methods enabling a system to learn autonomously from large amounts of data, without being explicitly programmed")
+const MLSubtextRef = ref("It uses specific methods and steps to achieve a specific goal or target, thus would be described in this app through the analogy of the odissey")
+const OdysseyTextRef = ref("The Odyssey was written by Homer. It is famously known as one of the oldest works of literature in human history. It follows Ulysses, the king of Ithaca (a Greek island), who is traveling back home after the Fall of Troy.")
+const OdysseyTextRefSecondPart = ref("Throughout his journey, Odysseus (Ulysses) will encounter many challenges to overcome before finally reaching his goal and reuniting with his wife Penelope and their son. In the same vein, Machine Learning goes through several stages before becoming fully operational.")
 onMounted(() => {
   titleRef.value.textContent = titleRef.value.textContent.toUpperCase();
 });
@@ -31,12 +35,18 @@ function scrollToSection() {
             <div class="container px-4 px-md-5 py-5 w-100">
                 <div class="row g-5 align-items-center">
                     <div class="col-12 col-md-6">
-                        <h2 class="section-title">THE JOURNEY BEGINS</h2>
+                        <h2 class="section-title">WHAT IS MACHINE LEARNING?</h2>
                         <p class="section-text">
-                            Machine learning is not merely a tool — it is an odyssey. A quest through data, patterns, and the unknown, forging intelligence from the raw material of experience.
+                            {{ MLRef }}
                         </p>
                         <p class="section-text">
-                            Every model trained is a step further into uncharted territory. Every iteration, a battle won against chaos. The machine learns. And so do we.
+                            {{ MLSubtextRef }}
+                        </p>
+                        <p class="section-text">
+                            {{ OdysseyTextRef }}
+                        </p>
+                        <p class="section-text">
+                            {{ OdysseyTextRefSecondPart }}
                         </p>
                         <div class="section-divider"></div>
                     </div>
