@@ -16,6 +16,10 @@ onMounted(() => {
 function scrollToSection() {
   document.getElementById('section-two').scrollIntoView({ behavior: 'smooth' });
 }
+
+function scrollToSectionThree() {
+  document.getElementById('section-three').scrollIntoView({ behavior: 'smooth' });
+}
 </script>
 
 <template>
@@ -24,7 +28,7 @@ function scrollToSection() {
         <!-- Hero Section -->
         <div class="d-flex flex-column justify-content-center align-items-center min-vh-100 text-center">
             <div class="container px-4 px-md-5 mt-5">
-                <h1 id="main-title" class="display-4 text-center mx-auto" ref="titleRef">The Odissey of Machine Learning</h1>
+                <h1 id="main-title" class="display-4 text-center mx-auto" ref="titleRef">The Odyssey of Machine Learning</h1>
                 <p id="main-text" class="mb-5 mx-auto text-center" v-html="introSlogan"></p>
             </div>
             <div class="scroll-arrow" @click="scrollToSection">&#8595;</div>
@@ -48,6 +52,21 @@ function scrollToSection() {
                         <p class="section-text">
                             {{ OdysseyTextRefSecondPart }}
                         </p>
+                        
+                        <button class="journey-btn" @click="scrollToSectionThree">Start the journey</button>
+                    </div>
+                    <div class="col-12 col-md-6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Three -->
+        <section id="section-three" class="min-vh-100 d-flex align-items-center">
+            <div class="container px-4 px-md-5 py-5 w-100">
+                <div class="row g-5 align-items-center">
+                    <div class="col-12 col-md-6">
+                        <h2 class="section-title">THE JOURNEY BEGINS</h2>
                         <div class="section-divider"></div>
                     </div>
                     <div class="col-12 col-md-6">
@@ -101,6 +120,26 @@ function scrollToSection() {
     font-family: OdisseyFont, sans-serif;
     opacity: 0;
     animation: fadeSlideUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards;
+}
+
+.journey-btn {
+    font-family: OdisseyFont, sans-serif;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    color: var(--blue-color);
+    background: transparent;
+    border: 1px solid var(--blue-color);
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeSlideUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 1.3s forwards;
+    transition: background 0.2s, color 0.2s;
+    margin-bottom: 2.5rem;
+}
+
+.journey-btn:hover {
+    background: var(--blue-color);
+    color: var(--dark-color, #0a0a0a);
 }
 
 .scroll-arrow {
